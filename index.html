@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <title>Ahmed Hussien | Professional-Links-Hub</title>
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/png">
+</head>
+<body>
+  <button type="button" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <!-- Your HTML with inline animation delays -->
+<div class="container fade-down" style="animation-delay:100ms">
+  <div class="profile fade-down" style="animation-delay:200ms">
+    <img src="./assets/images/profile.jpg" alt="Ahmed Hussien">
+    <h3>Ahmed Hussien</h3>
+    <p>Passionate web &amp; app developer.</p>
+  </div>
+
+  <div class="links-list">
+    <!-- Portfolio & CV Section -->
+    <a rel="noopener noreferrer" href="https://ahmed-hussien-portfolio.netlify.app/"
+       class="link fade-left" style="animation-delay:300ms" target="_blank">
+      <i class="fas fa-user-circle"></i>
+      <span>Personal Portfolio</span>
+    </a>
+
+    <a rel="noopener noreferrer" href="https://flowcv.com/resume/pheq1uwl1rb8"
+       class="link fade-right" style="animation-delay:400ms" target="_blank">
+      <i class="fas fa-file-alt"></i>
+      <span>CV Resume</span>
+    </a>
+
+    <!-- Freelancing Platforms -->
+    <a rel="noopener noreferrer" href="https://www.upwork.com/freelancers/~01ffe4c5ee33c20acc?mp_source=share"
+       class="link fade-left" style="animation-delay:500ms" target="_blank">
+      <i class="fa-brands fa-square-upwork"></i>
+      <span>Upwork Profile</span>
+    </a>
+
+    <a rel="noopener noreferrer" href="https://www.freelancer.com/u/Ahmed_Hussien1352"
+       class="link fade-right" style="animation-delay:600ms" target="_blank">
+      <img src="./freelancer.png" alt="Freelancer" style="width: 20px; height: 20px;">
+      <span>Freelancer Profile</span>
+    </a>
+
+    <a rel="noopener noreferrer" href="https://mostaql.com/Ahmed_Hussien55"
+       class="link fade-left" style="animation-delay:700ms" target="_blank">
+      <i class="fas fa-briefcase"></i>
+      <span>Mostaql Profile</span>
+    </a>
+
+    <a rel="noopener noreferrer" href="https://kafiil.com/u/Ahmed_Hussien1352"
+       class="link fade-right" style="animation-delay:800ms" target="_blank">
+      <i class="fas fa-user-tie"></i>
+      <span>Kafiil Profile</span>
+    </a>
+
+    <!-- Professional Networks -->
+    <a rel="noopener noreferrer" href="https://www.linkedin.com/in/ahmed-hussien-front-end-developer/"
+       class="link fade-left" style="animation-delay:900ms" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn Profile</span>
+    </a>
+
+    <a rel="noopener noreferrer" href="https://github.com/Eng-Ahmed-Hussien"
+       class="link fade-right" style="animation-delay:1000ms" target="_blank">
+      <i class="fab fa-github"></i>
+      <span>GitHub Profile</span>
+    </a>
+
+    <!-- Contact Methods -->
+    <a rel="noopener noreferrer" href="mailto:ahmedhussien1352@gmail.com"
+       class="link fade-left" style="animation-delay:1100ms" target="_blank">
+      <i class="fas fa-envelope"></i>
+      <span>Professional Email</span>
+    </a>
+
+    <a rel="noopener noreferrer" href="https://wa.me/201098909476"
+       class="link fade-right" style="animation-delay:1200ms" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp Account</span>
+    </a>
+
+    <!-- Social Media -->
+    <a rel="noopener noreferrer" href="https://facebook.com/ahmed.hussien"
+       class="link fade-left" style="animation-delay:1300ms" target="_blank">
+      <i class="fab fa-facebook"></i>
+      <span>Facebook Profile</span>
+    </a>
+  </div>
+
+  <div class="contact zoom-in" style="animation-delay:1400ms">
+    <a rel="noopener noreferrer" href="https://www.upwork.com/freelancers/~01ffe4c5ee33c20acc?mp_source=share" target="_blank"><i class="fa-brands fa-square-upwork"></i></a>
+    <a rel="noopener noreferrer" href="mailto:ahmedhussien1352@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a rel="noopener noreferrer" href="https://www.linkedin.com/in/ahmed-hussien-front-end-developer/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a rel="noopener noreferrer" href="https://github.com/Eng-Ahmed-Hussien" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a rel="noopener noreferrer" href="https://wa.me/201098909476" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+</div>
+<footer class="fade-up" style="animation-delay:1500ms">
+<p>&copy; <span class="footer-cp">Ahmed Hussien</span> | 2025</p>
+</footer>
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    toggle.addEventListener('click', () => {
+      const newTheme = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      toggle.textContent = newTheme === 'light' ? '🌙' : '☀️';
+    });
+    // Initialize from preference or localStorage
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', theme);
+    toggle.textContent = theme === 'light' ? '🌙' : '☀️';
+  </script>
+</body>
+</html>
